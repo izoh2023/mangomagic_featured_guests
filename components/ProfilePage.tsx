@@ -2,7 +2,7 @@
 
 import type React from "react"
 import { useState } from "react"
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 import { PlayCircle, Music, Mic, Video, Heart, ArrowRight } from "lucide-react"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 
@@ -24,7 +24,7 @@ export type WorkflowItem = {
 
 export type ProfilePageProps = {
   // Hero Section
-  profileImage: string
+  profileImage:  StaticImageData
   name: string
   highlightWord: string // The word to highlight in gold (e.g., "Shai")
   tagline: string

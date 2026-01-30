@@ -1,9 +1,11 @@
 import ProfilePage from "@/components/ProfilePage"
+import profileImg from "./shai-profile.jpg"
+
 
 // This is the data structure that n8n will populate
 const pageData = {
   // Hero Section
-  profileImage: "/images/shai-profile.jpg",
+  profileImage: profileImg,
   name: "Magic Shai Slagter",
   highlightWord: "Shai",
   tagline: "Exploring the art of automation and AI-powered creativity.",

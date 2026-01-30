@@ -18,9 +18,30 @@
     --foreground: #ededed;
   }
 }
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Added custom font classes for Montserrat */
+  .font-bold-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+  }
+
+  .font-light-body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+  }
+}
+
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
