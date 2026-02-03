@@ -108,15 +108,18 @@ export default function ProfilePage({
         <section className="relative text-center h-[70vh] md:h-[80vh] flex flex-col items-center justify-center bg-gradient-to-br from-black via-gray-900 to-black">
           <div className="relative z-20 p-4 flex flex-col items-center">
             <div className="mb-8">
-              <Image
-                src={profileImage}
-                alt={name}
-                width={200}
-                height={200}
-                className="rounded-full border-4 shadow-2xl"
+              <div 
+                className="relative w-[200px] h-[200px] rounded-full border-4 shadow-2xl overflow-hidden"
                 style={{ borderColor: accentColor }}
-                priority
-              />
+              >
+                <Image
+                  src={profileImage}
+                  alt={name}
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
             </div>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold-title tracking-tight text-white">
               {renderHighlightedText(name, highlightWord, accentColor)}
