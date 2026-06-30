@@ -1,4 +1,3 @@
-
 import ProfilePage from "@/components/ProfilePage"
 import profileImg from "./Bryan Adams Profile Pic.jpg"
 
@@ -99,5 +98,29 @@ const pageData = {
 }
 
 export default function GeneratedPage() {
-  return <ProfilePage {...pageData} />
+  return (
+    <>
+      <ProfilePage {...pageData} />
+      <a
+        href="https://before-you-scale.vercel.app"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          position: "fixed",
+          bottom: 20,
+          right: 20,
+          zIndex: 9999,
+          padding: "10px 16px",
+          backgroundColor: "#F1ab1c",
+          color: "#000",
+          fontWeight: 600,
+          borderRadius: 8,
+          textDecoration: "none",
+          boxShadow: "0 2px 8px rgba(0,0,0,0.2)"
+        }}
+      >
+        Test
+      </a>
+    </>
+  )
 }
